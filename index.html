@@ -19,7 +19,7 @@
      <!-- * Modal -->
 
         <!-- * Modal for log in -->
-        <div class="modal fade" id="studentModal" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true">
+        <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true">
             <div class="modal-dialog" role="document">
               <div class="modal-content">
                 
@@ -84,8 +84,231 @@
             </div>
         </div>
         <!-- * Modal for log in -->
-        
+
+        <!-- * Modal for Sign Up -->
+        <div class="modal fade" id="signupModal" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                
+                <!-- This block holds the header of the modal -->
+                <div class="modal-header">
+                  <h5 class="modal-title" id="ModalLabel">Welcome! Join us by signing up.</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <!-- This block holds the header of the modal -->
+
+                <!-- This holds the whole form -->
+                <div class="modal-body">
+                  <!-- form -->
+                  <div class="needs-validation" novalidate>
+                    <!-- * Alert triggers -->
+                    <div class="alert alert-danger collapse" role="alert" id="errorAlert">
+                        <strong>Error!</strong> Your Email and Password are not correct.
+                    </div>
+                    <div class="alert alert-success collapse" role="alert" id="successAlert">
+                      You are now logged in.
+                    </div>
+                    <!-- * Alert triggers -->
+                    <!-- Email Address -->
+                    <div class="form-group">
+                      <label for="login_InputEmail">Email address</label>
+                      <input type="email" class="form-control" id="login_InputEmail" placeholder="unknown@gmail.com" required>
+                      <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                      <div class="valid-feedback">
+                        Looks good!
+                      </div>
+                      <div class="invalid-feedback">
+                        Incorrect Email.
+                      </div>
+                    </div>
+                    <!-- Email Address -->
+
+                    <!-- Name -->
+                    <div class="form-group">
+                        <label for="login_InputName">Name</label>
+                        <input type="email" class="form-control" id="login_InputName" placeholder="Juan Dela Cruz" required>
+                        <small id="nameHelp" class="form-text text-muted">We need your name for your orders.</small>
+                        <div class="valid-feedback">
+                          Looks good!
+                        </div>
+                        <div class="invalid-feedback">
+                        </div>
+                      </div>
+                    <!-- Name -->
+
+                    <!-- Password -->
+                    <div class="form-group">
+                      <label for="login_InputPassword">Password</label>
+                      <input type="password" class="form-control" id="login_Password" required>
+                      <div class="valid-feedback">
+                        Great!
+                      </div>
+                      <div class="invalid-feedback">
+                        Incorrect Password.
+                      </div>
+                    </div>
+                    <!--Password -->
+
+                    <!-- Reminder -->
+                    <div class="alert alert-light" role="alert">
+                    You may further edit your profile after your registration.
+                    </div>
+                    <!-- Reminder -->
+
+                    <!-- Buttons -->
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button  class="btn btn-success" id="submitbtnLogin">Submit</button>
+                    <!-- Buttons -->
+                  </div>
+                  <!-- form -->
+                </div>
+                <!-- This holds the whole form -->
+
+              </div>
+            </div>
+        </div>
+        <!-- * Modal for Sign Up -->
+
+         <!-- * Modal for Sign Up for guests -->
+         <div class="modal fade" id="guestModal" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                
+                <!-- This block holds the header of the modal -->
+                <div class="modal-header">
+                  <h5 class="modal-title" id="ModalLabel">Welcome! Sign up as our guest.</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <!-- This block holds the header of the modal -->
+
+                <!-- This holds the whole form -->
+                <div class="modal-body">
+                  <!-- form -->
+                  <div class="needs-validation" novalidate>
+                    <!-- * Alert triggers -->
+                    <div class="alert alert-danger collapse" role="alert" id="errorAlert">
+                        <strong>Error!</strong> Your Email and Password are not correct.
+                    </div>
+                    <div class="alert alert-success collapse" role="alert" id="successAlert">
+                      You are now logged in.
+                    </div>
+                    <!-- * Alert triggers -->
+                    <!-- Email Address -->
+                    <div class="form-group">
+                      <label for="login_InputEmail">Email address</label>
+                      <input type="email" class="form-control" id="login_InputEmail" placeholder="unknown@gmail.com" required>
+                      <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                      <div class="valid-feedback">
+                        Looks good!
+                      </div>
+                      <div class="invalid-feedback">
+                        Incorrect Email.
+                      </div>
+                    </div>
+                    <!-- Email Address -->
+
+                    <!-- Name -->
+                    <div class="form-group">
+                        <label for="login_InputName">Full Name</label>
+                        <input type="text" class="form-control" id="login_InputName" placeholder="unknown@gmail.com" required>
+                        <small id="nameHelp" class="form-text text-muted">We need your name for your orders.</small>
+                        <div class="valid-feedback">
+                          Looks good!
+                        </div>
+                        <div class="invalid-feedback">
+                        </div>
+                      </div>
+                    <!-- Name -->
+
+                    <!-- Mobile Number -->
+                    <div class="form-group">
+                        <label for="login_InputName">Mobile Number</label>
+                        <input type="text" maxlength="11" class="form-control" id="login_InputMobileNumber" placeholder="09xxxxxxxxx" required>
+                        <small id="nameHelp" class="form-text text-muted">We need your mobile number to easily call you for your orders.</small>
+                        <div class="valid-feedback">
+                          Looks good!
+                        </div>
+                        <div class="invalid-feedback">
+                        </div>
+                      </div>
+                    <!-- Mobile Number -->
+
+                    <!-- House Number, Building and Street -->
+                    <div class="form-group">
+                        <label for="login_InputName">House Number, Building, and Street Name</label>
+                        <input type="text" class="form-control" id="login_InputAddress1" required>
+                        <div class="valid-feedback">
+                          Looks good!
+                        </div>
+                        <div class="invalid-feedback">
+                        </div>
+                      </div>
+                    <!-- House Number, Building and Street -->
+
+                    <!-- Province -->
+                    <div class="form-group">
+                        <label for="login_InputName">Province</label>
+                        <input type="text" class="form-control" id="login_InputProvince" required>
+                        <div class="valid-feedback">
+                          Looks good!
+                        </div>
+                        <div class="invalid-feedback">
+                        </div>
+                      </div>
+                    <!-- Province -->
+
+                    <!-- City or Municipality -->
+                    <div class="form-group">
+                        <label for="login_InputName">City or Municipality</label>
+                        <input type="text" class="form-control" id="login_InputCity" required>
+                        <div class="valid-feedback">
+                          Looks good!
+                        </div>
+                        <div class="invalid-feedback">
+                        </div>
+                      </div>
+                    <!-- City or Municipality -->
+
+                    <!-- Barangay -->
+                    <div class="form-group">
+                        <label for="login_InputName">Barangay</label>
+                        <input type="text" class="form-control" id="login_InputBarangay" required>
+                        <div class="valid-feedback">
+                          Looks good!
+                        </div>
+                        <div class="invalid-feedback">
+                        </div>
+                      </div>
+                    <!-- Barangay -->
+
+                    <!-- Other Notes -->
+                    <div class="mb-3">
+                        <label for="exampleFormControlTextarea1" class="form-label">Other Notes</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    </div>
+                    <!-- Other Notes -->
+
+                    <!-- Buttons -->
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button  class="btn btn-success" id="submitbtnLogin">Submit</button>
+                    <!-- Buttons -->
+                  </div>
+                  <!-- form -->
+                </div>
+                <!-- This holds the whole form -->
+
+              </div>
+            </div>
+        </div>
+        <!-- * Modal for Sign Up for guests -->
+
     <!-- * Modal -->
+
+    <!-- * Main Content -->
 
     <div style="display:none;" id="allContent" class="animate">
         <!-- * navbar -->
@@ -99,17 +322,17 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">Contact Us<span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="#callToAction">Contact Us<span class="sr-only">(current)</span></a>
                 </li>
 
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Store</a>
+                  <a class="nav-link" href="#">Our Store</a>
                 </li>
 
                 </ul>
 
                 <!-- Button trigger modal -->
-                <button class="btn btn-warning m-2" type="button" data-toggle="modal" data-target="#studentModal">Sign in</button>
+                <button class="btn btn-warning m-2" type="button" data-toggle="modal" data-target="#loginModal">Sign in</button>
                 <!-- Button trigger modal -->
             </div>
         </nav>
@@ -159,7 +382,7 @@
               <span class="sr-only">Next</span>
             </a>
     
-          </div>
+        </div>
         <!-- * Carousel: Header -->
 
         <!-- * jumbotron -->
@@ -169,12 +392,58 @@
             <hr class="my-4">
             <p>Description</p>
             <p class="lead">
-                <button type="button" class="btn btn-outline-success">Sign Up</button>
-                <button type="button" class="btn btn-outline-warning">Sign Up as Guest</button>
+                <button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#signupModal">Sign Up</button>
+                <button type="button" class="btn btn-outline-warning">Direct Order Online</button>
             </p>
         </div>
         <!-- * jumbotron -->
-    </div>
+
+        <!-- * Call to Action -->
+        <div class="p-2 bd-highlight" id="callToAction">
+            
+            <div class="container" id="calltoAction">
+  
+              <div class="card text-center">
+  
+                <div class="card-body">
+  
+                  <h5 class="card-title display-3">Need some help?</h5>
+  
+                  <p class="card-text">We understand that trying a new service can be scary, that's why we want you to make this 100% risk-free for you. <strong>You may call one of our trusted admins:</strong></p>
+                  
+                  <p>
+                    <a class="btn btn-warning" data-toggle="collapse" href="#collapseOnline" role="button" aria-expanded="false" aria-controls="collapseExample">
+                        Almira Chavez-Cunanan
+                    </a>
+                    <button class="btn btn-success" type="button" data-toggle="collapse" data-target="#collapseCall" aria-expanded="false" aria-controls="collapseExample">
+                    Violeta Miranda 
+                    </button>
+                  </p>
+            
+                  <div class="collapse" id="collapseOnline">
+                    <div class="card card-body">
+                      <div class="alert alert-warning">
+                        <h3>Mobile: 09178602210</h3>
+                      </div>
+                    </div>
+                  </div>
+            
+                  <div class="collapse" id="collapseCall">
+                    <div class="card card-body">
+                      <h3 class="alert alert-success">Mobile: 09178169109</h3>
+                    </div>
+                  </div>
+  
+                  <img src="/bundles/img/undraw_elements_cipa.svg" alt="" style="width: 250px; height: 300px;">
+  
+                  
+              </div>
+  
+            </div>
+          </div>
+        <!-- * Call to Action -->
     
+    </div>
+    <!-- * Main Content -->
 </body>
 </html>
