@@ -1,8 +1,7 @@
-// * Main manager for Admin Store Page
+// * Main manager for customer store page
 
 // Import
 import * as FirebaseUsers from './firebaseUsers.js'
-import * as FirebaseHelper from './firebaseHelper.js'
 
 // * Function that uses checkActiveUser() promise
 FirebaseUsers.checkActiveUser()
