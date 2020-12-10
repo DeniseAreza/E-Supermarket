@@ -130,7 +130,7 @@
                     <!-- * Alert triggers -->
                     <!-- Email Address -->
                     <div class="form-group">
-                      <label for="login_InputEmail">Email address</label>
+                      <label for="signup_InputEmail">Email address</label>
                       <input type="email" class="form-control" id="signup_InputEmail" placeholder="unknown@gmail.com" required>
                       <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
                       <div class="valid-feedback">
@@ -142,25 +142,15 @@
                     </div>
                     <!-- Email Address -->
 
-                    <!-- Customer Confirmation -->
-                    <div class="form-floating">
-                      <select class="form-select" id="signupSelect" aria-label="Floating label select example">
-                        <option selected>Open this select menu</option>
-                        <option value="1">Customer</option>
-                      </select>
-                      <label for="signupSelect">Signing up as:</label>
-                    </div>
-                    <!-- Customer Confirmation -->
-
                     <!-- Password -->
                     <div class="form-group">
-                      <label for="login_InputPassword">Password</label>
-                      <input type="password" class="form-control" id="signup_Password" required>
+                      <label for="signup_InputPassword">Password</label>
+                      <input type="password" class="form-control" id="signup_InputPassword" required>
                       <div class="valid-feedback">
                         Great!
                       </div>
-                      <div class="invalid-feedback">
-                        Incorrect Password.
+                      <div class="invalid-feedback" id="invalid-feedback">
+                        Must be more than 7 characters.
                       </div>
                     </div>
                     <!--Password -->
